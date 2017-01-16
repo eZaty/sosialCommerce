@@ -1,0 +1,107 @@
+i n<ion-header>
+  <ion-navbar color="danger">
+    <ion-grid>
+      <ion-row>
+        <ion-col width-40><ion-searchbar></ion-searchbar></ion-col>
+        <ion-col width-10><ion-icon name="heart-outline" (click)="mylike()"></ion-icon></ion-col>
+        <ion-col width-10><ion-icon name="ios-text-outline" (click)="inbox()"></ion-icon></ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-navbar >
+
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-slides>
+        <ion-slide class="wrapper">
+          <img class="slider" src="../assets/images/sales3.png" />
+          <h4>How to start</h4>
+          <p>Buying and Selling</p>
+        </ion-slide>
+        <ion-slide>
+          <img class="slider" src="../assets/images/sales2.png" />
+        </ion-slide>
+        <ion-slide>
+          <img class="slider" src="../assets/images/sales.png" />
+        </ion-slide>
+      </ion-slides>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="category">
+        <p>Following</p>
+        <img src="../assets/images/following.png"/>
+      </ion-col>
+      <ion-col class="category">
+        <p>Electronic & Gadget</p>
+        <img src="../assets/images/gadget.png" />
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="category">
+        <p>Women Fashion</p>
+        <img src="../assets/images/fashion.png" />
+      </ion-col>
+      <ion-col class="category">
+        <p>Design & Craft</p>
+        <img src="../assets/images/design.png" />
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class ="category">
+        <p>Men Fashion</p>
+        <img src="../assets/images/menfashion.png" />
+      </ion-col>
+      <ion-col class ="category">
+        <p>Health & Beauty</p>
+        <img src="../assets/images/health1.png" />
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class ="category">
+        <p>Muslimah Fashion</p>
+        <img src="../assets/images/muslimahfashion.png" />
+      </ion-col>
+      <ion-col class ="category">
+        <p>Mobile Phone</p>
+        <img class="gallery" src="../assets/images/phone.png" />
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class ="category">
+        <p>Photography</p>
+        <img src="../assets/images/photography.png" />
+      </ion-col>
+      <ion-col class ="category">
+        <p>Gaming</p>
+        <img src="../assets/images/gaming.png" />
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-list-header>
+        <button ion-item (click)="recommended()">
+          <ion-icon name="star"></ion-icon>
+          Recommended Users
+        </button>
+
+        <button ion-item (click)="invitefriend()">
+          <ion-icon name="person-add"></ion-icon>
+          Find and Invite Friends
+        </button>
+      </ion-list-header>
+    </ion-row>
+  </ion-grid>
+
+
+
+</ion-content>
